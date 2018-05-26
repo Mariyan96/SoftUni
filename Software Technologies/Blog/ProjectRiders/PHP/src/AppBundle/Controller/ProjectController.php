@@ -23,7 +23,7 @@ class ProjectController extends Controller
     }
 
     /**
-     * @Route("/create", name="create")
+     * @Route("newsarticle/create", name="newsarticle/create")
      */
     public function create(Request $request)
     {

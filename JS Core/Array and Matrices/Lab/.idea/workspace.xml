@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f39f176b-fdc3-4f99-bf4e-39c8ac09b597" name="Default" comment="" />
+    <list default="true" id="97911b6b-5ae7-43f4-8b61-1577c79097d2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,7 +13,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DiagonalSum.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DiagonalSum.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,15 +36,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Inside Volume.js" />
-        <option value="$PROJECT_DIR$/Template Format.js" />
-        <option value="$PROJECT_DIR$/Road Radar.js" />
-        <option value="$PROJECT_DIR$/Cooking by Numbers.js" />
-        <option value="$PROJECT_DIR$/Modify Average.js" />
-        <option value="$PROJECT_DIR$/Validity Checker.js" />
-        <option value="$PROJECT_DIR$/Treasure Locator.js" />
-        <option value="$PROJECT_DIR$/Trip Length.js" />
-        <option value="$PROJECT_DIR$/DNA Helix.js" />
+        <option value="$PROJECT_DIR$/Sum First Last.js" />
+        <option value="$PROJECT_DIR$/Even Position Element.js" />
+        <option value="$PROJECT_DIR$/Negative  Positive Numbers.js" />
+        <option value="$PROJECT_DIR$/First and Last K Numbers.js" />
+        <option value="$PROJECT_DIR$/Last K Numbers Sequence.js" />
+        <option value="$PROJECT_DIR$/ProcessOdd.js" />
+        <option value="$PROJECT_DIR$/SmallestTwoNumbers.js" />
+        <option value="$PROJECT_DIR$/BiggestElement.js" />
+        <option value="$PROJECT_DIR$/BiggestElement2.js" />
+        <option value="$PROJECT_DIR$/biggestElement3.js" />
+        <option value="$PROJECT_DIR$/DiagonalSum.js" />
       </list>
     </option>
   </component>
@@ -90,19 +103,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Functions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Functions" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -128,20 +141,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.DNA Helix.js">
-    <configuration name="DNA Helix.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="DNA Helix.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="Inside Volume.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="Inside Volume.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="Modify Average.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="Modify Average.js" working-dir="$PROJECT_DIR$" />
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.Inside Volume.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.Modify Average.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.DNA Helix.js" />
+  <component name="RunManager" selected="Node.js.biggestElement3.js">
+    <configuration name="BiggestElement2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="BiggestElement2.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="BiggestElement.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="BiggestElement.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="ProcessOdd.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="ProcessOdd.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="SmallestTwoNumbers.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="SmallestTwoNumbers.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="biggestElement3.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="biggestElement3.js" working-dir="$PROJECT_DIR$" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.ProcessOdd.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.SmallestTwoNumbers.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.BiggestElement.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.BiggestElement2.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.biggestElement3.js" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.DNA Helix.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.Modify Average.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.Inside Volume.js" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.biggestElement3.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.BiggestElement2.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.BiggestElement.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.SmallestTwoNumbers.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.ProcessOdd.js" />
       </list>
     </recent_temporary>
   </component>
@@ -153,23 +172,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f39f176b-fdc3-4f99-bf4e-39c8ac09b597" name="Default" comment="" />
-      <created>1527318745729</created>
+      <changelist id="97911b6b-5ae7-43f4-8b61-1577c79097d2" name="Default" comment="" />
+      <created>1527319540702</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1527318745729</updated>
-      <workItem from="1527318747854" duration="405000" />
-      <workItem from="1527319500782" duration="39000" />
+      <updated>1527319540702</updated>
+      <workItem from="1527319542681" duration="7080000" />
+      <workItem from="1527677416808" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="444000" />
+    <option name="totallyTimeSpent" value="7115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -178,7 +198,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39873418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -195,70 +215,103 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Last K Numbers Sequence.js</url>
+          <line>1</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Inside Volume.js">
+    <entry file="file://$PROJECT_DIR$/DiagonalSum.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Road Radar.js">
+    <entry file="file://$PROJECT_DIR$/Sum First Last.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="136">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cooking by Numbers.js">
+    <entry file="file://$PROJECT_DIR$/Even Position Element.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Template Format.js">
+    <entry file="file://$PROJECT_DIR$/Negative  Positive Numbers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modify Average.js">
+    <entry file="file://$PROJECT_DIR$/First and Last K Numbers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="187">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Validity Checker.js">
+    <entry file="file://$PROJECT_DIR$/Last K Numbers Sequence.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Treasure Locator.js">
+    <entry file="file://$PROJECT_DIR$/ProcessOdd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        <state relative-caret-position="85">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Trip Length.js">
+    <entry file="file://$PROJECT_DIR$/SmallestTwoNumbers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DNA Helix.js">
+    <entry file="file://$PROJECT_DIR$/BiggestElement2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BiggestElement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biggestElement3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DiagonalSum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

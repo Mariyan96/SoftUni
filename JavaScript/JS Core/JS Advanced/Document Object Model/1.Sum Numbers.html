@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1">+
+<input type="number" id="num2">=
+<input type="text" readonly="readonly" id="sum">
+<input type="button" value="Sum" onclick="Calc()">
+<script>
+    function Calc() {
+        let firstNumber = Number(document.getElementById("num1").value);
+        let secondNumber = Number(document.getElementById("num2").value);
+        document.getElementById("sum").value=firstNumber+secondNumber;
+    }
+</script>
+</body>
+</html>

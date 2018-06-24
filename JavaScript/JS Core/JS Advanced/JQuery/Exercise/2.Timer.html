@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <script src="jQueryFile.js" ></script>
+    <style>
+        #timer {
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+<div id="timer">
+    <span id="hours" class="timer">00</span>:
+    <span id="minutes" class="timer">00</span>:
+    <span id="seconds" class="timer">00</span>
+    <button id="start-timer">Start</button>
+    <button id="stop-timer">Stop</button>
+</div>
+<!--<script src="timer.js"></script>-->
+<script>
+    window.onload=function(){
+        $('#start-timer').on('click',timer);
+        $('#stop-timer').on('click',pauseTimer);
+        let started=false;
+        let interval;
+        let seconds=0;
+        function timer() {
+            if(!started){
+                interval=setInterval(increment,1000);
+                started=true;
+            }
+        }
+        function pauseTimer() {
+            if(started){
+                clearInterval(interval);
+                started=false;
+            }
+        }
+        function increment() {
+            seconds++;
+            let hoursToDisplay;
+            let minutesToDisplay;
+            let secondsToDisplay;
+            secondsToDisplay=seconds%60;
+            let minutes=seconds/60;
+            minutesToDisplay=Math.trunc(minutes%60);
+            hoursToDisplay=Math.trunc(seconds/3600);
+            if(secondsToDisplay<=9){
+                secondsToDisplay='0'+secondsToDisplay;
+            }
+            if(minutesToDisplay<=9){
+                minutesToDisplay='0'+minutesToDisplay;
+            }
+            if(hoursToDisplay<=9){
+                hoursToDisplay='0'+hoursToDisplay;
+            }
+            $('#hours').text(hoursToDisplay);
+            $('#minutes').text(minutesToDisplay);
+            $('#seconds').text(secondsToDisplay);
+
+        }
+    }
+</script>
+</body>
+</html>

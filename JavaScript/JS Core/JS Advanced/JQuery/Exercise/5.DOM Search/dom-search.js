@@ -11,15 +11,16 @@ function domSearch(container, caseSensitive) {
     searchDiv
         .append('<label>Search:<input></label>');
 
-    $('.search-controls label input').on('change',filter);
+    $('.search-controls label input').on('change', filter);
     let resultDiv = $('<div class="result-controls">');
     resultDiv.append('<ul class="items-list">')
     $('.items-list').append('<li class="list-item">');
 
     resultDiv.appendTo(container)
     let button = $('.button');
-    button.on('click',addingItems);
-    function addingItems(){
+    button.on('click', addingItems);
+
+    function addingItems() {
         let text = $('.add-controls label > input');
         if (text.val() !== '') {
             let item = $('<li class="list-item">');
@@ -28,11 +29,12 @@ function domSearch(container, caseSensitive) {
             text.val('');
             item.appendTo($('.items-list'))
             let btn = $('.list-item .button');
-            btn.on('click',function () {
+            btn.on('click', function () {
                 $(this).parent().remove();
             })
         }
     }
+
     function filter() {
         let searchedText = $(".search-controls input").val();
         let text;

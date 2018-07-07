@@ -1,68 +1,59 @@
 function validate() {
-    let username = $("#username");
-    let email = $("#email");
-    let password = $("#password");
-    let confirmPass = $("#confirm-password");
-    let submitBtn = $("#submit");
-    let company = $("#company");
-    let companyInfo = $("#companyInfo");
-    let fieldsAreValid = true;
+    let username = $('#username');
+    let email = $('#email');
+    let password = $('#password');
+    let confirmPass = $('#confirm-password');
+    let companyNumber = $('#companyNumber');
+    let submitBtn = $('#submit');
+    let checkBox=$('#company');
+    let isValid;
 
-    company.on("change", function () {
-        if (company.is(":checked")) {
-            companyInfo.css("display", "block");
-        } else {
-            companyInfo.css("display", "none");
+    checkBox.on('change',function () {
+        if(checkBox.is(':checked')){
+            $('#companyInfo').css('display','block');
+        }else{
+            $('#companyInfo').css('display','none');
+
         }
     });
-
-    submitBtn.on("click", function (event) {
+    submitBtn.on('click', function (event) {
+        isValid=true;
         event.preventDefault();
-        checkInputFields();
-        showMessage();
-        fieldsAreValid = true;
+        validateField(username,/^[a-zA-Z0-9]{3,20}$/g);
+        validateField(email,/^.*@.*?[\.]+.*$/g);
+        if(password.val()===confirmPass.val()){
+            validateField(password,/^(\w{5,15})$/g);
+            validateField(confirmPass,/^(\w{5,15})$/g);
+        }else{
+            password.css('border-color','red');
+            confirmPass.css('border-color','red');
+            isValid=false;
+
+        }
+        validateCompanyNumber();
+        if(isValid){
+            $('#valid').css('display','block')
+        }else{
+            $('#valid').css('display','none')
+
+        }
     });
-
-    function checkInputFields() {
-        isItValid(username, /^[0-9A-Za-z]{3,20}$/);
-        isItValid(email, /^.*@.*?[\.]+.*$/);
-
-        if ((password.val() === confirmPass.val())) {
-            isItValid(password, /^(\w{5,15})$/);
-            isItValid(confirmPass, /^(\w{5,15})$/);
-        } else {
-            password.css("border-color", "red");
-            confirmPass.css("border-color", "red");
-            fieldsAreValid = false;
-        }
-        if (company.is(":checked")) {
-            companyValidNumber();
+    function validateField(field,regex) {
+        if(regex.test(field.val())){
+            field.css('border-color','')
+        }else{
+            field.css('border-color','red');
+            isValid=false;
         }
     }
-
-    function isItValid(element, pattern) {
-        if (pattern.test(element.val())) {
-            element.css("border-color", "");
-        } else {
-            element.css("border-color", "red");
-            fieldsAreValid = false;
-        }
-    }
-
-    function companyValidNumber() {
-        let number = +$('#companyNumber').val();
-        if (number < 1000 || number > 9999) {
-            $('#companyNumber').css("border-color", "red");
-            fieldsAreValid = false;
-        } else {
-            $('#companyNumber').css("border-color", "");
-        }
-    }
-    function showMessage() {
-        if (fieldsAreValid) {
-            $("#valid").css("display", "block");
-        } else{
-            $("#valid").css("display", "none");
+    function validateCompanyNumber() {
+        if(checkBox.is(':checked')){
+            if(companyNumber.val()>=1000&&companyNumber.val()<=9999){
+                $('#companyNumber').css('border-color','');
+            }else{
+                $('#companyNumber').css('border-color','red');
+                isValid=false;
+            }
         }
     }
 }

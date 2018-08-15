@@ -1,4 +1,4 @@
-let manager=(function () {
+let manager = (function () {
     let inStock = {
         protein: 0,
         carbohydrate: 0,
@@ -14,21 +14,21 @@ let manager=(function () {
     };
     return function (line) {
         let [command, item, quantity] = line.split(' ');
-        quantity=Number(quantity);
+        quantity = Number(quantity);
         if (command === 'restock') {
             inStock[item] += quantity;
             return 'Success'
         } else if (command === 'report') {
             return Object.keys(inStock).map(x => x = `${x}=${inStock[x]}`).join(' ');
         } else if (command === 'prepare') {
-            let neededIngr=Object.keys(recipes[item]);
+            let neededIngr = Object.keys(recipes[item]);
             for (let current of neededIngr) {
-                if(inStock[current]<(recipes[item][current])*quantity){
+                if (inStock[current] < (recipes[item][current]) * quantity) {
                     return `Error: not enough ${current} in stock`
                 }
             }
             for (let current of neededIngr) {
-                inStock[current]=inStock[current]-recipes[item][current]*quantity;
+                inStock[current] = inStock[current] - recipes[item][current] * quantity;
                 return 'Success';
             }
         }

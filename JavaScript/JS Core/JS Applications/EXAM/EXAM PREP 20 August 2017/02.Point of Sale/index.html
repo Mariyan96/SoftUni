@@ -4,31 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>PointOfSale SPA</title>
-    <link rel="stylesheet" href="style/site.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/notifications.css">
-    <link rel="stylesheet" href="style/sections.css">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/notifications.css">
+    <link rel="stylesheet" href="styles/sections.css">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/handlebars/dist/handlebars.min.js"></script>
-    <script src="../../node_modules/sammy/lib/min/sammy-0.7.6.min.js"></script>
-    <script src="../../node_modules/sammy/lib/min/plugins/sammy.handlebars-0.7.6.min.js"></script>
-    <script src="scripts/notify.js"></script>
+    <script src="../../node_modules/sammy/lib/sammy.js"></script>
+    <script src="../../node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
     <script src="scripts/remote.js"></script>
-    <script src="scripts/services/entries.js"></script>
-    <script src="scripts/services/receipts.js"></script>
-    <script src="scripts/services/auth.js"></script>
+    <script src="scripts/notify.js"></script>
+    <script src="scripts/services/auth-service.js"></script>
+    <script src="scripts/services/entries-service.js"></script>
+    <script src="scripts/services/receipt-service.js"></script>
     <script src="scripts/app.js"></script>
-    <script src="handlers/editor-handler.js"></script>
-    <script src="handlers/auth-handler.js"></script>
-    <script src="handlers/receipt-handler.js"></script>
+    <script src="scripts/handlers/auth-handler.js"></script>
+    <script src="scripts/handlers/editor-handler.js"></script>
+    <script src="scripts/handlers/receipits-handler.js"></script>
+
 </head>
 
 <body>
+
 <div id="container">
-
-
-
+    {{>loginForm}}
+    {{>registerForm}}
 </div>
+
 <div id="notifications">
     <div id="loadingBox" class="notification">
         <span>Loading …</span>

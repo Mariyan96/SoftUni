@@ -1,4 +1,4 @@
-<form id="create-receipt-form" action="#/checkout" method="post">
+<form action="#/checkout" method="post" id="create-receipt-form">
     <div class="col wide">
     </div>
     <div class="col wide">
@@ -8,7 +8,7 @@
     <div class="col">
         <input id="checkoutBtn" type="submit" value="Checkout" />
     </div>
-    <input type="hidden" name="receiptId" value="{{receiptId}}"/>
-    <input type="hidden" name="productCount" value = "{{productsCount}}" />
-    <input type="hidden" name="total" value="{{total}}"/>
+    <input type="hidden" name="receiptId" value="{{receiptId}}" />
+    <input type="hidden" name="productsCount" value="{{productsCount}}" />
+    <input type="hidden" name="total" value="{{total}}" />
 </form>

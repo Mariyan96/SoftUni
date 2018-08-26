@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="prodavachnik.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="prodavachnik.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/scripts/prodavachnik.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="77" />
+            <state relative-caret-position="119">
+              <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
               <folding>
                 <element signature="n#!!block;n#startApp#0" />
                 <element signature="n#!!block;n#addAd#0" />
@@ -27,19 +27,21 @@
                 <element signature="n#!!block;n#editAd#0" />
                 <element signature="n#!!block;n#submitEdit#0" />
                 <element signature="n#!!block;n#viewDetails#0" />
+                <element signature="n#!!block;n#registerUser#0" />
                 <element signature="n#!!block;n#loginUser#0" />
                 <element signature="n#!!block;n#logoutUser#0" />
                 <element signature="n#!!block;n#saveAuthToken#0" />
                 <element signature="n#!!block;n#checkIfUserIsLog#0" />
+                <element signature="e#8348#8372#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2074">
+            <state relative-caret-position="547">
               <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
             </state>
           </provider>
@@ -100,17 +102,16 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="86" />
-    <option name="y" value="44" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="-18" />
+    <option name="y" value="-17" />
+    <option name="width" value="1369" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,13 +134,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.5.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../EXAM/ACTUAL EXAM" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -173,11 +175,12 @@
       <workItem from="1533757896408" duration="171000" />
       <workItem from="1535292717448" duration="317000" />
       <workItem from="1535293746802" duration="325000" />
+      <workItem from="1535308191001" duration="2065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17048000" />
+    <option name="totallyTimeSpent" value="19113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -226,10 +229,48 @@
             <element signature="n#!!block;n#editAd#0" />
             <element signature="n#!!block;n#submitEdit#0" />
             <element signature="n#!!block;n#viewDetails#0" />
+            <element signature="n#!!block;n#registerUser#0" />
             <element signature="n#!!block;n#loginUser#0" />
             <element signature="n#!!block;n#logoutUser#0" />
             <element signature="n#!!block;n#saveAuthToken#0" />
             <element signature="n#!!block;n#checkIfUserIsLog#0" />
+            <element signature="e#8348#8372#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/styles/prodavachnik.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/scripts/prodavachnik.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="77" />
+          <folding>
+            <element signature="n#!!block;n#startApp#0" />
+            <element signature="n#!!block;n#addAd#0" />
+            <element signature="n#!!block;n#listAds#0" />
+            <element signature="n#!!block;n#deleteAd#0" />
+            <element signature="n#!!block;n#editAd#0" />
+            <element signature="n#!!block;n#submitEdit#0" />
+            <element signature="n#!!block;n#viewDetails#0" />
+            <element signature="n#!!block;n#registerUser#0" />
+            <element signature="n#!!block;n#loginUser#0" />
+            <element signature="n#!!block;n#logoutUser#0" />
+            <element signature="n#!!block;n#saveAuthToken#0" />
+            <element signature="n#!!block;n#checkIfUserIsLog#0" />
+            <element signature="e#8348#8372#0" />
           </folding>
         </state>
       </provider>
@@ -260,10 +301,12 @@
             <element signature="n#!!block;n#editAd#0" />
             <element signature="n#!!block;n#submitEdit#0" />
             <element signature="n#!!block;n#viewDetails#0" />
+            <element signature="n#!!block;n#registerUser#0" />
             <element signature="n#!!block;n#loginUser#0" />
             <element signature="n#!!block;n#logoutUser#0" />
             <element signature="n#!!block;n#saveAuthToken#0" />
             <element signature="n#!!block;n#checkIfUserIsLog#0" />
+            <element signature="e#8348#8372#0" />
           </folding>
         </state>
       </provider>
@@ -294,10 +337,12 @@
             <element signature="n#!!block;n#editAd#0" />
             <element signature="n#!!block;n#submitEdit#0" />
             <element signature="n#!!block;n#viewDetails#0" />
+            <element signature="n#!!block;n#registerUser#0" />
             <element signature="n#!!block;n#loginUser#0" />
             <element signature="n#!!block;n#logoutUser#0" />
             <element signature="n#!!block;n#saveAuthToken#0" />
             <element signature="n#!!block;n#checkIfUserIsLog#0" />
+            <element signature="e#8348#8372#0" />
           </folding>
         </state>
       </provider>
@@ -328,10 +373,12 @@
             <element signature="n#!!block;n#editAd#0" />
             <element signature="n#!!block;n#submitEdit#0" />
             <element signature="n#!!block;n#viewDetails#0" />
+            <element signature="n#!!block;n#registerUser#0" />
             <element signature="n#!!block;n#loginUser#0" />
             <element signature="n#!!block;n#logoutUser#0" />
             <element signature="n#!!block;n#saveAuthToken#0" />
             <element signature="n#!!block;n#checkIfUserIsLog#0" />
+            <element signature="e#8348#8372#0" />
           </folding>
         </state>
       </provider>
@@ -358,10 +405,12 @@
             <element signature="n#!!block;n#editAd#0" />
             <element signature="n#!!block;n#submitEdit#0" />
             <element signature="n#!!block;n#viewDetails#0" />
+            <element signature="n#!!block;n#registerUser#0" />
             <element signature="n#!!block;n#loginUser#0" />
             <element signature="n#!!block;n#logoutUser#0" />
             <element signature="n#!!block;n#saveAuthToken#0" />
             <element signature="n#!!block;n#checkIfUserIsLog#0" />
+            <element signature="e#8348#8372#0" />
           </folding>
         </state>
       </provider>
@@ -377,13 +426,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/scripts/attachEvents.js" />
-    <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/styles/prodavachnik.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1836">
@@ -393,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/scripts/prodavachnik.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="77" />
+        <state relative-caret-position="119">
+          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
           <folding>
             <element signature="n#!!block;n#startApp#0" />
             <element signature="n#!!block;n#addAd#0" />
@@ -403,11 +445,20 @@
             <element signature="n#!!block;n#editAd#0" />
             <element signature="n#!!block;n#submitEdit#0" />
             <element signature="n#!!block;n#viewDetails#0" />
+            <element signature="n#!!block;n#registerUser#0" />
             <element signature="n#!!block;n#loginUser#0" />
             <element signature="n#!!block;n#logoutUser#0" />
             <element signature="n#!!block;n#saveAuthToken#0" />
             <element signature="n#!!block;n#checkIfUserIsLog#0" />
+            <element signature="e#8348#8372#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prodavachnik - Skeleton/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
         </state>
       </provider>
     </entry>

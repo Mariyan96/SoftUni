@@ -4,6 +4,7 @@ const BASE_URL = 'https://baas.kinvey.com/';
 const APP_KEY='kid_rkL4lQyvm';
 const APP_SECRET='a68bf94717df44a28856d4ecabc631ab';
 export default class Register extends Component{
+    //declaring the state with the user credentials
     constructor(props){
         super(props);
         this.state={
@@ -12,6 +13,7 @@ export default class Register extends Component{
             passwordRepeat:''
         };
     }
+    //saving every new input
     changeInput = (e)=>{
         this.setState({
             [e.target.name]:e.target.value
@@ -25,7 +27,7 @@ export default class Register extends Component{
 
         if(password!==passwordRepeat){
             window.alert("Passwords should match!")
-        //TODO Other register validations
+        //we can add register form validations
         }else{
             let data = {username:username,password:password};
             axios.post(BASE_URL + 'user/'+APP_KEY + '/',data,
@@ -67,5 +69,4 @@ export default class Register extends Component{
             </form>
         )
     }
-
 }

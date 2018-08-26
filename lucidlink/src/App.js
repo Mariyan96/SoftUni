@@ -7,11 +7,9 @@ import Login from "./forms/Login.js";
 import Register from "./forms/Register.js";
 import Welcome from "./Welcome.js";
 import Orders from "./forms/Orders";
-import OrderItem from "./forms/OrderItem"
-import DeliveryAddress from "./forms/DeliveryAddress"
+import OrderItem from "./forms/OrderItem";
+import DeliveryAddress from "./forms/DeliveryAddress";
 import PaymentMethod from "./forms/PaymentMethod"
-
-
 export default class App extends Component {
   render() {
     return (

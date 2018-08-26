@@ -1,10 +1,35 @@
 import React, { Component } from "react";
-
+import axios from "axios";
+const BASE_URL = 'https://baas.kinvey.com/';
+const APP_KEY='kid_rkL4lQyvm';
 export default class Orders extends Component{
+    constructor(props){
+        super(props);
+        this.state ={
+            username:sessionStorage.getItem('username')
+        }
+    }
+    submitLogout = (e)=>{
+        e.preventDefault();
+        axios.post(BASE_URL + 'user/'+APP_KEY + '/_logout','',
+            {
+                headers: {'Authorization': `Kinvey ${sessionStorage.getItem('authToken')}`
+                }}
+                ).then(function (res)
+        {
+            console.log(res);
+            //clearing all session
+            sessionStorage.clear();
+            //redirecting to home page
+            window.location ='/';
+        }).catch(function (err) {
+            console.log(err);
+        })
+    };
     render(){
         return (
-            <form className="MyOrders">
-                <h1>My Orders</h1>
+            <form className="MyOrders" onSubmit={this.submitLogout}>
+                <h1>{this.state.username}'s Orders</h1>
                 <table>
                     <thead>
                     <tr>
@@ -40,9 +65,7 @@ export default class Orders extends Component{
                     </tbody>
                 </table>
                 <div className="container signin">
-                    <p>
-                        <a href="#/">Go Back?</a>
-                    </p>
+                    <button type="submit" onSubmit={e=>this.submitLogout(e)} className="button">Logout</button>
                 </div>
             </form>
         )

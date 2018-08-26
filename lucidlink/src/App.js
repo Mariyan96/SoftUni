@@ -25,8 +25,6 @@ export default class App extends Component {
                     <Route exact path="/OrderItem" component={OrderItem}/>
                     <Route exact path="/DeliveryAddress" component={DeliveryAddress}/>
                     <Route exact path="/PaymentMethod" component={PaymentMethod}/>
-
-
                 </div>
             </div>
         </HashRouter>

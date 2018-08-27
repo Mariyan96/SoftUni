@@ -87,6 +87,16 @@ input[type=text]:focus, input[type=number]:focus, input[type=password]:focus {
     width: 50%;
     opacity: 0.9;
 }
+.backButton {
+    background-color: darkorange;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
 
 .button:hover {
     opacity: 1;
@@ -127,5 +137,10 @@ th, td {
     text-align: left;
     padding: 10px;
 }
+tfoot tr td {
+    background: orangered;
+    text-align: right;
+}
+
 
 

@@ -3,13 +3,13 @@ import {
     Route,
     HashRouter
 } from "react-router-dom";
-import Login from "./forms/Login.js";
-import Register from "./forms/Register.js";
+import Login from "./components/Login.js";
+import Register from "./components/Register.js";
 import Welcome from "./Welcome.js";
-import Orders from "./forms/Orders";
-import OrderItem from "./forms/OrderItem";
-import DeliveryAddress from "./forms/DeliveryAddress";
-import PaymentMethod from "./forms/PaymentMethod"
+import Orders from "./components/Orders";
+import OrderItem from "./components/OrderItem";
+import DeliveryAddress from "./components/DeliveryAddress";
+import PaymentMethod from "./components/PaymentMethod"
 export default class App extends Component {
   render() {
     return (

@@ -46,7 +46,7 @@ export default class Register extends Component {
                     window.location = '/#Orders';
 
                 }).catch(function (err) {
-                console.log(err);
+                    throw err;
             })
         }
     };

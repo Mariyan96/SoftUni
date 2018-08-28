@@ -36,7 +36,7 @@ export default class Login extends Component {
             //redirecting to user page
             window.location = '/#Orders';
         }).catch(function (err) {
-            console.log(err);
+            throw err;
         })
     };
 

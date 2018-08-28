@@ -1,6 +1,6 @@
-//all tests.If you need editing something open this => http://desktop-tff7q9n:1341/project/
 "@fixture lucidlink";
 "@page http://localhost:3000/#/";
+
 "@test"["allTesting"] = {
     '1.Click link "Login"': function() {
         act.click(":containsExcludeChildren(Login)");

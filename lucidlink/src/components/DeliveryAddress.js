@@ -8,7 +8,7 @@ export default class DeliveryAddress extends Component {
         //it's easier and more efficient from performance point of view
         //because sessionStorage can only set string variable we are parsing the object into string
         data = JSON.parse(sessionStorage.getItem('currentOrder'));
-        console.log(data);
+        //setting initial values to order properties
         this.state = {
             order: data.order ||
             {
@@ -30,10 +30,10 @@ export default class DeliveryAddress extends Component {
     }
 
     //saving every input
-    handleChange = function(propertyName,event) {
+    handleChange = function (propertyName, event) {
         let deliveryData = this.state.delivery;
         deliveryData[propertyName] = event.target.value;
-        this.setState({ delivery: deliveryData });
+        this.setState({delivery: deliveryData});
     };
     //redirecting to the next screen after saving the session
     redirectToPaymentMethod = (e) => {
@@ -73,13 +73,13 @@ export default class DeliveryAddress extends Component {
                         <input onChange={this.handleChange.bind(this, 'postalCode')}
                                value={this.state.delivery.postalCode}
                                type="text"
-                               placeholder="1000" />
+                               placeholder="1000"/>
 
                         <h3>Street:</h3>
                         <input onChange={this.handleChange.bind(this, 'street')}
                                value={this.state.delivery.street}
                                type="text"
-                               placeholder="8December street" />
+                               placeholder="8December street"/>
 
                         <h3>Details:</h3>
                         <input onChange={this.handleChange.bind(this, 'details')}
@@ -91,7 +91,8 @@ export default class DeliveryAddress extends Component {
                     <div>
                         <button onSubmit={e => this.redirectToPaymentMethod(e)}
                                 type="submit"
-                                className="button">Continue</button>
+                                className="button">Continue
+                        </button>
                         <br/>
                         <button onClick={e => this.goBack(e)} className="backButton">Go Back</button>
                     </div>

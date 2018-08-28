@@ -9,6 +9,7 @@ export default class paymentDetails extends Component {
     constructor(props) {
         data = JSON.parse(sessionStorage.getItem('currentOrder'));
         super(props);
+        //main structure for the current order with nested properties
         this.state = {
             order: data.order     ||
             {
@@ -57,9 +58,12 @@ export default class paymentDetails extends Component {
     }
 
     finishOrder = (e) => {
+        //preventing refresh
         e.preventDefault();
+
         data.paymentDetails = this.state.paymentDetails;
         data.paymentMethod=this.state.paymentMethod;
+        //posting to the database
         axios.post(BASE_URL + 'appdata/' + APP_KEY + '/Orders', data,
             {headers: {'Authorization': `Kinvey ${sessionStorage.getItem('authToken')}`}})
             .then(function (res) {
@@ -68,12 +72,15 @@ export default class paymentDetails extends Component {
                 window.location = '/#Orders';
 
             }).catch(function (err) {
+                throw err;
         })
+        //after the order  ,we don`t need to keep in the session storage anything useless
         sessionStorage.setItem('currentOrder', '{}');
     }
     //saving every input
     handleChange = function(propertyName,method,event){
         let paymentDetails;
+        //a switch to decide what payment form needs to be rendered
         switch (method){
             case 'card':
                 paymentDetails = this.state.paymentDetails.card;
@@ -104,6 +111,7 @@ export default class paymentDetails extends Component {
 
     }
     paymentForm = () => {
+        //the switch with different JSC 'templates'
         switch (this.state.paymentMethod) {
             case 'Card':
                 return <div>
@@ -157,7 +165,7 @@ export default class paymentDetails extends Component {
                            type="text"
                            placeholder="Sofia, 8 December street №2 " />
 
-                        </div>
+                </div>
             case 'Cash':
                 return <div>
                     <div>
@@ -212,35 +220,35 @@ export default class paymentDetails extends Component {
                 </div>
             case 'BitCoin':
                 return<div>
-                        <div>First Name: </div>
-                        <input onChange={this.handleChange.bind(this, 'firstName','bitCoin')}
-                               value={this.state.paymentDetails.bitCoin.firstName}
-                               type="text"
-                               placeholder="Prakash"/>
-                        <br/>
-                        <div>Last Name: </div>
-                        <input onChange={this.handleChange.bind(this, 'lastName','bitCoin')}
-                               value={this.state.paymentDetails.bitCoin.lastName}
-                               type="text"
-                               placeholder="Dimitrov"/>
-                        <br/>
-                        <div>BitCoin Wallet: </div>
-                        <input onChange={this.handleChange.bind(this, 'bitCoinWallet','bitCoin')}
-                               value={this.state.paymentDetails.bitCoin.bitCoinWallet}
-                               type="text"
-                               placeholder="mus6mt8m7o"/>
-                        <br/>
-                        <div>Wallet Password: </div>
-                        <input onChange={this.handleChange.bind(this, 'walletPassword','bitCoin')}
-                               value={this.state.paymentDetails.bitCoin.walletPassword}
-                               type="password"/>
-                        <br/>
-                        <div>Billing Address: </div>
-                        <input onChange={this.handleChange.bind(this, 'billingAddress','bitCoin')}
-                               value={this.state.paymentDetails.bitCoin.billingAddress}
-                               type="text"
-                               placeholder="Sofia, 8 December street №2 "/>
-                    </div>
+                    <div>First Name: </div>
+                    <input onChange={this.handleChange.bind(this, 'firstName','bitCoin')}
+                           value={this.state.paymentDetails.bitCoin.firstName}
+                           type="text"
+                           placeholder="Prakash"/>
+                    <br/>
+                    <div>Last Name: </div>
+                    <input onChange={this.handleChange.bind(this, 'lastName','bitCoin')}
+                           value={this.state.paymentDetails.bitCoin.lastName}
+                           type="text"
+                           placeholder="Dimitrov"/>
+                    <br/>
+                    <div>BitCoin Wallet: </div>
+                    <input onChange={this.handleChange.bind(this, 'bitCoinWallet','bitCoin')}
+                           value={this.state.paymentDetails.bitCoin.bitCoinWallet}
+                           type="text"
+                           placeholder="mus6mt8m7o"/>
+                    <br/>
+                    <div>Wallet Password: </div>
+                    <input onChange={this.handleChange.bind(this, 'walletPassword','bitCoin')}
+                           value={this.state.paymentDetails.bitCoin.walletPassword}
+                           type="password"/>
+                    <br/>
+                    <div>Billing Address: </div>
+                    <input onChange={this.handleChange.bind(this, 'billingAddress','bitCoin')}
+                           value={this.state.paymentDetails.bitCoin.billingAddress}
+                           type="text"
+                           placeholder="Sofia, 8 December street №2 "/>
+                </div>
             default:
                 return undefined;
         }

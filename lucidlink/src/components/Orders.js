@@ -39,15 +39,16 @@ export default class Orders extends Component {
             {
                 headers: {'Authorization': 'Kinvey ' + sessionStorage.getItem('authToken')}
             }).then((res) => {
+                //after getting the promise with all the data, we re calculating the grandTotal
             let sum = 0;
             res.data.map(entry =>
                 sum += parseInt(entry.order.subtotal, 10)
             )
+            //setting the grandTotal
             this.setState({
                 myProducts: res.data,
                 grandTotal: sum
             })
-            console.log(this.state.myProducts);
         }).catch(function (err) {
             throw err;
         })
@@ -70,6 +71,7 @@ export default class Orders extends Component {
                     </tr>
                     </thead>
                     <tbody id="orders">
+                    {/*every data piece is individual table row with credentials*/}
                     {this.state.myProducts.map((row, i) =>
                         <tr key={`products-row-${i}`}>
                             <td>{i + 1}</td>

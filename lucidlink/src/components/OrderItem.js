@@ -23,19 +23,20 @@ export default class OrderItem extends Component {
     redirectToDeliveryAddress = (e) => {
         //preventing page refreshing
         e.preventDefault();
-        //await and async needed for JS compiler to wait a little to calculate subtotal before
-        //posting it in HTML
+
         data = this.state;
         sessionStorage.setItem('currentOrder', JSON.stringify(data));
         window.location = '/#/DeliveryAddress';
     }
     goBack = (e) => {
+        //preventing page refreshing
         e.preventDefault();
+
         data = this.state;
         sessionStorage.setItem('currentOrder', JSON.stringify(data));
         window.location = "/#/Orders";
     }
-    //saving every input
+    //saving every input and calculating every product's subtotal
     handleChange = function (propertyName, event) {
         let order = this.state.order;
         order[propertyName] = event.target.value;
